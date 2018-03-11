@@ -153,9 +153,11 @@ nav span a{
   }
   
   .nav-mobile a{
-    padding-left: 6rem;
+    padding-left: 1rem; 
+    padding-right: 1rem;
+    margin-left: 4rem;
+/*    padding: to make the landing area for finger-touch bigger on the mobile device. margin: to assure, that the correct icon is touched.*/
   }
-  
 }
 
 /* ----- First section ----- */
