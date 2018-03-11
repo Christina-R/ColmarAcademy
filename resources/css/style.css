@@ -517,6 +517,10 @@ footer{
   font-size: 0.8rem;
 }
 
+.font-awesome a{
+  padding: 0 .5rem;
+}
+
 .footer-links a{
   display: inline-block;
   color: black;
