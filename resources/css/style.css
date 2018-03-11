@@ -135,6 +135,29 @@ nav span a{
   color: #4A4A4A;
 }
 
+.nav-mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 480px){
+  .company{
+    display: none;
+  }
+  
+  nav span{
+  display: none;
+  }
+ 
+  .nav-mobile{
+    display: flex;
+  }
+  
+  .nav-mobile a{
+    padding-left: 6rem;
+  }
+  
+}
+
 /* ----- First section ----- */
 
 
@@ -184,6 +207,38 @@ nav span a{
   margin-top: 2rem;
 }
 
+@media only screen and (max-width: 480px){
+  .first-section{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  
+  .media-box-1{
+    width: 100%;
+  }
+  
+  .support-box{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.support-text{
+ 
+  margin-top: 2rem;
+}
+
+.support-text p{
+  padding-top: 2rem;
+}
+
+.support-button{
+  width: 100%;
+  margin: 2rem;
+}
+}
+
+
 /*------ Second section ------*/
 
 .second-section{
@@ -232,7 +287,6 @@ nav span a{
   width: 40%;
   padding: 2rem 0 2rem;
   border-left: 1px solid #E2E4E4;
-
 }
 
 .second-right-small-box{
@@ -250,6 +304,10 @@ nav span a{
   padding: 1rem;
 }
 
+.img-mobile{
+  display: none;
+}
+
 .bottom-double-line{
   border-bottom: double #E2E4E4;
 }
@@ -257,6 +315,63 @@ nav span a{
 .gray{
   background-color: #D8D8D8;
 }
+
+.second-right-small-box a{
+  text-decoration: none;
+  color: #4F93E3;
+}
+
+@media only screen and (max-width: 480px){
+  .second-left-side{
+    display: none;
+  }
+  
+  .second-right-side{
+    width: 100%;
+    padding-top: 1rem;
+    border-left: 0px solid #E2E4E4;
+}
+  
+  .second-right-small-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    /*  border: 1px dotted red;*/
+  /* boder just for visualization aid*/
+}
+
+  .second-right-small-box img{
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+}
+  
+  .img-desktop{
+    display: none;
+}
+
+  .img-mobile{
+    display: block;
+    width: 100%;
+}
+  
+.bottom-double-line{
+  border-bottom: double ghostwhite;
+}
+
+.gray{
+  background-color: ghostwhite;
+}
+  
+/*Question: what other options are there to not show the double line and the gray background? just setting them to "display: none" removed the whole box.*/
+  
+
+  .small-box-text{
+    padding: 2rem;
+  }
+}
+
 
 /* ----- Third section ----- */
 
@@ -298,6 +413,32 @@ nav span a{
 .white-box-text p{
   padding-top: 0.5rem;
   line-height: 1.5;
+}
+
+.course-mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 480px){
+  .third-section{
+    background-color: ghostwhite;
+    border-top: 1px solid #E2E4E4;
+    border-bottom: 1px solid #E2E4E4;
+  }
+  
+  .container-for-boxes-upper-row,
+  .container-for-boxes-lower-row{
+    display: none;
+  }
+  
+  .course-mobile{
+    display: block;
+    width: 80%;
+    background-color: #D8D8D8;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+    margin-top: 0.5rem;
+  }
 }
 
 /* ----- Fourth section ----- */
@@ -348,6 +489,21 @@ video{
   line-height: 1.5;
 }
 
+@media only screen and (max-width: 480px){
+  .fourth-right,
+  .fourth-left-text{
+    display: none;
+  }
+  
+  .fourth-left{
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
+}
+}
+
 /* --- Footer section --- */
 
 footer{
@@ -366,3 +522,12 @@ footer{
   padding-left: 0.5rem;
 }
 
+@media only screen and (max-width: 480px){
+  footer{
+  border-top: 0px solid gray;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+}
+  .footer-links a{
+  display: none;
+}
+}
